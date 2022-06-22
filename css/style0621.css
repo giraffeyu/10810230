@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0
+    
+}
+body {
+    background: #ccc;
+}
+
+/* 白色框框 */
+
+.wrap {
+    background: #fff;
+    width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.wrap h2 {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px dotted #ccc;
+}
+.wrap h2 span {
+    margin-left: 10px;
+    color: #666;
+}
+.wrap ul {
+    
+    list-style: none;
+}
+
+/* 基本資料 */
+
+.profile {
+  background: #eee;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.profile .left {
+  width: 60%;
+  height: 30%;
+  float: left;
+  margin-right: 2%;
+}
+
+.profile .left img {
+  width: 100%;
+}
+
+.profile .right {
+  float: left;
+}
+
+.profile .right h1.name {
+  font-size: 24px;
+  padding-top: 20px;
+  margin-bottom: 170px;
+}
+
+.profile .right .info {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 180%;
+}
+
+.profile .right .link {
+  margin-bottom: 10px;
+}
+
+.profile .right .link a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+.profile .right .link a:hover {
+  opacity: .5;
+}
+.profile .right .link a img {
+  width: 28px;
+  height: 28px;
+}
+
+.profile .right .mail {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.profile .right .mail::before {
+  content: "E";
+  color: #666;
+  margin-right: 2px;
+}
+
+.profile .right .mail a {
+  color: rgb(0, 92, 150);
+  text-decoration: none;
+}
+
+.profile .right .mail a:hover {
+  color: rgb(0, 123, 247);
+}
+
+.profile .right .phone {
+  font-size: 14px;
+}
+.profile .right .phone::before {
+  content: "P";
+  color: #666;
+  margin-right: 2px;
+}
+
+/* 技能 */
+
+.skill {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.skill ul {
+    font-size: 14px;
+}
+
+.skill ul li {
+    width: 40%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 5%;
+    margin-bottom: 8px;
+
+}
+
+.skill ul li::before {
+    content: "✎";
+    margin-right: 8px;
+    color: #c8945c;
+}
+   
+.skill ul li:nth-child (3n) {
+    margin-right: 0;
+}
+
+.skill ul li span {
+    margin-left: 8px;
+    color: rgb(136, 134, 134)
+}
+
+/* 經歷 */
+
+.experience {
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    box-sizing: border-box;
+}
+
+.experience .leftB {
+    float: left;
+    width: 48%;
+    margin-right: 3%;
+    padding-left: 8px;
+}
+
+.experience .rightB {
+    float: left;
+    width: 48%;
+}
+
+.experience ul {
+    font-size: 14px;
+    border-left: 1px solid #c8945c;
+}
+
+.experience ul li {
+    margin-bottom: 10px;
+    padding: 20px;
+    position: relative;
+}
+.experience ul li::before {
+    content: "✒︎";
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    color: #c8945c;
+    position: absolute;
+    left: -5px;
+    top: 22px;
+}
+    
+
+.experience ul li span {
+    display: block;
+    font-size: 12px;
+    color: rgb(141, 140, 140)
+}
+
+
+/* 作品 */
+
+.work{
+    overflow: hidden;
+}
+
+.work ul{}
+
+.work ul li {
+    width: 32%;
+    height: 350px;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work ul li:nth-child(3n) {
+    margin-right: 0;
+}
+.work ul li img{
+    margin-top: 10px;
+    width: 100%;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.work ul li:hover img{
+    transform: scale(1.1);
+}
+
+.work ul li .text {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;;
+    padding: 8px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .4 );
+    color: #fff;
+    transition: all 1s;
+    text-align: center;
+}
+
+.work ul li:hover .text{
+    bottom: 0;
+}
